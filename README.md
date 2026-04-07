@@ -1,12 +1,11 @@
 # E-Commerce Sales Data Analysis & Tableau Integration
 
-This is a personal side project focused on building an integrated data pipeline between **Python**, **SQL**, and **Tableau**. It demonstrates how to perform data cleaning and exploratory data analysis (EDA) in a Jupyter environment and export the results for high-performance visualization in Tableau.
+This is a personal side project focused on building an integrated data pipeline between **Python**, **SQL**, and **Tableau**. It demonstrates how to perform exploratory data analysis (EDA) in a Jupyter environment and export the results for high-performance visualization in Tableau.
 
-## Project Overview
-The project processes e-commerce sales data to uncover profit trends. The core logic involves:
-1.  **Automated Data Acquisition**: Using `kagglehub` to fetch the latest e-commerce datasets.
-2.  **Data Cleaning**: Handling missing values for "Amount," "Date," and "Category" fields using Pandas.
-3.  **Visualization (EDA)**: Generating statistical plots with Seaborn and Matplotlib to understand category performance.
+## Overview
+1.  **Data Acquisition**: Using `kagglehub` to fetch the ecommerce public dataset of orders made at Olist Store.
+2.  **Data Cleaning and EDA**: Handling missing values using Pandas.
+3.  **Visualization**: Generating statistical plots with Seaborn and Matplotlib to understand category performance.
 4.  **Tableau Integration**: Exporting the cleaned DataFrame directly into a `.hyper` file format (Tableau's high-performance data engine) using the `pantab` library.
 
 ## Key Features
@@ -20,10 +19,13 @@ To run this notebook, you will need:
 - The libraries listed in `requirements.txt`
 
 ## Instructions
-1. Install prerequisites: `pip install -r requirements.txt`.
-2. **Setup the Hyper Kernel:** Run this command in your terminal or your Jupyter Notebook/Lab cell to ensure the packages are installed into your active environment and register the kernel for the Jupyter Launcher.
-```python
-python -m hyper_kernel.install
-```
+1. Install prerequisites:  
+   ```python
+   pip install -r requirements.txt
+   ```
+2. **Setup the Hyper Kernel:** Run this command in your terminal or your Jupyter Notebook/Lab cell to ensure the packages are installed into your active environment and register the kernel for the Jupyter Launcher.  
+    ```python
+    python -m hyper_kernel.install
+    ```
 3. Run the notebook `ecommerce_DF-TableauExtract.ipynb`.
 4. The cleaned data will be saved as `ecommerce_cleaned.hyper`, which you can immediately open in Tableau for dashboarding.
